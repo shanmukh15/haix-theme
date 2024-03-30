@@ -1,0 +1,4 @@
+{
+  "*.css": ["yarn lint:css", "yarn format"],
+  "*.{js|jsx}": ["yarn lint:js", "yarn format"]
+}
