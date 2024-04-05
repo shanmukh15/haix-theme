@@ -1,4 +1,4 @@
 {
   "*.css": ["yarn lint:css", "yarn format", "git add"],
-  "*.{js|jsx}": ["yarn lint:js", "yarn format", "git add"]
+  "*.{js|jsx}": ["yarn lint:js --no-ignore", "yarn format", "git add"]
 }
