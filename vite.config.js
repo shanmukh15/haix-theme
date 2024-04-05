@@ -4,9 +4,12 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
+  css: {
+    postcss: path.resolve(__dirname, "./configuration/postcss.config.js"),
+  },
   resolve: {
     alias: {
-      "@ui-rack": path.resolve(new URL("./uirack", import.meta.url).pathname),
+      "@uirack": path.resolve(__dirname, "./src/ComponentLibrary"),
     },
   },
   server: {
