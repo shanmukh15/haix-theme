@@ -1,0 +1,49 @@
+/* Border Design Tokens in rem */
+
+@import 'colors.css';
+
+:root {
+  /* Border Widths */
+  --border-width-thin: 0.0625rem; /* 1px */
+  --border-width-medium: 0.125rem; /* 2px */
+  --border-width-thick: 0.1875rem; /* 3px */
+
+  /* Border Colors */
+  --border-color: var(--border-base);
+  --border-color-hover: var(--border-hover-focus);
+  --border-color-active: var(--border-alternate);
+
+  /* Border Radii */
+  --border-radius-small: 0.25rem; /* 4px */
+  --border-radius-medium: 0.5rem; /* 8px */
+  --border-radius-large: 0.75rem; /* 12px */
+
+  /* Border Styles */
+  --border-style: solid;
+  --border-style-dashed: dashed;
+  --border-style-dotted: dotted;
+
+  /* Border Transparency */
+  --border-transparency: 0.5;
+
+  /* Box Shadow Variants in rem */
+  /* Depth Shadows */
+  --shadow-depth-low: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  --shadow-depth-medium: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  --shadow-depth-high: 0 0.5rem 0.75rem rgba(0, 0, 0, 0.1);
+
+  /* Hover Shadow */
+  --shadow-hover: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+
+  /* Inner Shadow */
+  --shadow-inner: inset 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+
+  /* Outline Shadow */
+  --shadow-outline: 0 0 0.125rem 0.25rem var(--primary-color);
+
+  /* Focus Shadow */
+  --shadow-focus: 0 0 0.25rem rgba(0, 0, 0, 0.4);
+
+  /* Active Shadow */
+  --shadow-active: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.2);
+}

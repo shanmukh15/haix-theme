@@ -1,0 +1,76 @@
+/* Color Design Tokens */
+
+:root {
+  /* Primary Colors
+   * Represents the core brand visual identity. 
+   * Used for prominent elements like buttons, links, and important call-to-action areas.
+   * Base, Light-Hover, Dark-Active
+   */
+  --primary-color: #0071c5;
+  --primary-light: #56c2ff;
+  --primary-dark: #005197;
+
+  /* Secondary Colors
+   * Complements the primary color and adds variety, constrast.
+   * Used for secondary buttons, accents, and other UI elements to create visual hierarchy.
+   * Base, Light-Hover, Dark-Active
+   */
+  --secondary-color: #ffc107;
+  --secondary-light: #ffd54f;
+  --secondary-dark: #c79100;
+
+  /* Background Colors
+   * Set the base color for different sections and components.
+   */
+  --main-background: #ffffff; /* Main Background */
+  --content-background: #f5f5f5; /* Content Background */
+  --card-background: #e0e0e0; /* Card or Module Background */
+  --header-background: #333333; /* Header Background */
+  --footer-background: #333333; /* Footer Background */
+  --modal-background: rgba(0, 0, 0, 0.8); /* Modal or Overlay Background */
+
+  /* Text Colors
+   * Define the color of regular text content.
+   * Include heading colors, link colors, subdued(disabled) and body text colors.
+   */
+  --text-base: #333333; /* Base Text Color */
+  --heading-primary: #444444; /* Heading Text Colors */
+  --heading-secondary: #555555; /* Heading Text Colors */
+  --link-color: #0071c5; /* Default Link Color */
+  --link-hover-color: #005197; /* Link Color on Hover */
+  --link-active-color: #003366; /* Link Color on Active State */
+  --subdued-text: #777777; /* Subdued Text Color */
+
+  /* Accent Colors
+   * Used to indicate status, success, errors, and warnings.
+   * Enhance the user experience by providing visual feedback.
+   * Improve usability by quickly drawing attention to important information.
+   */
+  --success-light: #81c784;
+  --success: #4caf50;
+  --success-dark: #388e3c;
+
+  --error-light: #ef9a9a;
+  --error: #f44336;
+  --error-dark: #d32f2f;
+
+  --warning-light: #ffd54f;
+  --warning: #ffc107;
+  --warning-dark: #ffa000;
+
+  /* Neutral Colors
+   * Provide a set of balanced, non-intrusive colors.
+   * Used for backgrounds, borders, and other UI elements.
+   * Help maintain a consistent look while avoiding excessive use of primary and secondary colors. (border, divider, disabled)
+   */
+  --neutral-light: #e0e0e0; /* backgrounds, cards */
+  --neutral-medium: #b0b0b0; /* text content, secondary ui elements */
+  --neutral-dark: #707070; /* text on light, emphazing ui elements */
+
+  --border-base: #cccccc;
+  --border-alternate: #e0e0e0;
+  --border-hover-focus: #0071c5;
+
+  --divider-color: #cccccc;
+  --disabled-color: #888888;
+}

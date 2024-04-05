@@ -1,0 +1,175 @@
+/* Typography Design Tokens */
+
+@import 'colors.css';
+@import 'border.css';
+@import 'spacing.css';
+
+:root {
+  /* Font Families */
+  --primary-font: 'Arial', sans-serif;
+  --secondary-font: 'Helvetica', sans-serif;
+
+  /* Font Sizes */
+  --base-font-size: 16px;
+  --heading-1: 2.5rem;
+  --heading-2: 2rem;
+  --heading-3: 1.75rem;
+  --paragraph: 1rem;
+  --caption: 0.875rem;
+
+  /* Line Heights */
+  --base-line-height: 1.5;
+  --heading-line-height: 1.2;
+  --caption-line-height: 1.25;
+
+  /* Font Weights */
+  --regular-font-weight: 400;
+  --bold-font-weight: 700;
+
+  /* Letter Spacing */
+  --base-letter-spacing: 0.02em;
+  --heading-letter-spacing: 0.05em;
+
+  /* Text Colors */
+  --text-color: var(--text-base);
+  --heading-color: var(--heading-primary);
+  --link-color: var(--link-color);
+  --caption-color: #777777;
+
+  /* Link Styles */
+  --link-underline: underline;
+  --link-hover-color: var(--link-hover-color);
+  --link-active-color: var(--link-active-color);
+
+  /* Heading Styles */
+  --heading-margin-bottom: 1rem;
+
+  /* Paragraph and Line Styles */
+  --paragraph-margin-bottom: 1rem;
+  --line-height-reset: 1;
+
+  /* Text Alignment */
+  --text-align-left: left;
+  --text-align-center: center;
+  --text-align-right: right;
+  --text-align-justify: justify;
+}
+
+/* Typography Styles for Text Elements */
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--heading-1);
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h2 {
+  font-size: var(--heading-2);
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h3 {
+  font-size: var(--heading-3);
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: var(--heading-line-height);
+  font-weight: var(--bold-font-weight);
+  color: var(--heading-color);
+  margin-bottom: var(--heading-margin-bottom);
+}
+
+p {
+  font-size: var(--paragraph);
+  line-height: var(--base-line-height);
+  margin-bottom: var(--paragraph-margin-bottom);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: var(--link-underline);
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+a:hover {
+  color: var(--link-active-color);
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: var(--spacing-lg);
+}
+
+li {
+  font-size: var(--paragraph);
+  line-height: var(--base-line-height);
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 4px solid var(--primary-color);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  background-color: var(--neutral-light);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--border-radius-small);
+}
+
+strong {
+  font-weight: var(--bold-font-weight);
+}
+
+em {
+  font-style: italic;
+}
+
+pre {
+  font-family: 'Courier New', monospace;
+  background-color: var(--neutral-light);
+  padding: var(--spacing-md);
+  border: var(--border-width-thin) solid var(--border-base);
+  border-radius: var(--border-radius-small);
+  overflow: auto;
+}
