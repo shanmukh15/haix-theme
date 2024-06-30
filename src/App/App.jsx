@@ -1,9 +1,9 @@
-import TestComponent from "./TestComponent";
-import { ThemeProvider } from "@uirack/components/ui/ThemeProvider";
+import BootStrap from './BootStrap';
+import { ThemeProvider } from '@uirack/components/ui/ThemeProvider';
 
 const App = () => (
   <ThemeProvider defaultTheme="system" storageKey="haix-color-mode">
-    <TestComponent />
+    <BootStrap />
   </ThemeProvider>
 );
 
